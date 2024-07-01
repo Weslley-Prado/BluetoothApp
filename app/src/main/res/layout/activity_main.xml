@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button A"
+        android:layout_margin="16dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button B"
+        android:layout_margin="16dp"
+        android:layout_below="@id/buttonA"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button C"
+        android:layout_margin="16dp"
+        android:layout_below="@id/buttonB"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/receivedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Received Value"
+        android:layout_margin="16dp"
+        android:layout_below="@id/buttonC"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
